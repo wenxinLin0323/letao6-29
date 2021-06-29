@@ -1,0 +1,138 @@
+ul {
+  list-style-type: none;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+.red {
+  color: #a94442;
+}
+.table.table-bordered th,
+.table.table-bordered td {
+  text-align: center;
+  vertical-align: middle;
+}
+.mt_150 {
+  margin-top: 150px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mb_20 {
+  margin-bottom: 20px;
+}
+.panel-title {
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+}
+.pl-180 {
+  padding-left: 180px;
+}
+.lt-hide {
+  display: none;
+}
+.ts {
+  transition: padding 0.5s;
+}
+.lt-aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 100%;
+  background-color: #222d32;
+  z-index: 999;
+  transition: left 0.5s;
+}
+.lt-aside .lt-title {
+  text-align: center;
+  height: 50px;
+  background-color: #367fa9;
+  font-size: 25px;
+  line-height: 50px;
+}
+.lt-aside .lt-title a {
+  color: white;
+}
+.lt-aside .lt-user {
+  margin-top: 25px;
+}
+.lt-aside .lt-user img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.lt-aside .lt-user p {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+.lt-aside .nav {
+  margin-top: 30px;
+}
+.lt-aside .nav a {
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  padding-left: 40px;
+  color: white;
+  border-left: 3px solid transparent;
+}
+.lt-aside .nav ul li i {
+  margin-right: 5px;
+}
+.lt-aside .nav .cate-list a {
+  padding-left: 57px;
+}
+.lt-aside .current {
+  border-left: 2px solid yellow;
+  background-color: #222;
+}
+.lt-aside.lt-out {
+  left: -180px;
+}
+.lt-main {
+  width: 100%;
+  background-color: white;
+}
+.lt-main .main-head {
+  height: 50px;
+  width: 100%;
+  background-color: #367fa9;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 888;
+}
+.lt-main .main-head a {
+  display: block;
+  font-size: 20px;
+  color: white;
+  margin: 15px;
+}
+.lt-main .lt-content {
+  padding: 15px;
+}
+.lt-main .lt-crumbs {
+  margin-top: 50px;
+}

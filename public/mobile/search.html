@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>乐淘</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css" />
+    <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/search.css" />
+  </head>
+
+  <body>
+    <div class="lt-layout">
+      <!-- 头部 -->
+      <div class="lt-header">
+        <a href="./index.html" class="home">
+          <i class="fa fa-chevron-left"></i
+        ></a>
+        <h4>搜索中心</h4>
+      </div>
+      <!-- 主体 -->
+      <div class="lt-main">
+        <!-- 区域滚动 -->
+        <div class="mui-scroll-wrapper">
+          <div class="mui-scroll">
+            <!-- 搜索头部 -->
+            <div class="search-head">
+              <input
+                type="text"
+                class="search-txt"
+                placeholder="请输入搜索关键字"
+              />
+              <button class="search-btn mui-btn-primary">搜索</button>
+            </div>
+            <!-- 搜索记录 -->
+            <div class="search-main"></div>
+          </div>
+        </div>
+      </div>
+      <!-- 底部 -->
+      <div class="lt-footer">
+        <ul>
+          <!-- (li>a[href="#"]>(i.+p{首页}))*4 -->
+          <li>
+            <a href="./index.html">
+              <i class="fa fa-home"></i>
+              <p>首页</p>
+            </a>
+          </li>
+          <li>
+            <a href="./category.html">
+              <i class="fa fa-align-justify"></i>
+              <p>分类页</p>
+            </a>
+          </li>
+          <li>
+            <a href="./cart.html">
+              <i class="fa fa-shopping-cart"></i>
+              <p>购物车</p>
+            </a>
+          </li>
+          <li>
+            <a href="./user.html">
+              <i class="fa fa-user"></i>
+              <p>用户中心</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 模板 -->
+    <script type="text/html" id="tmp">
+      {{ if list.length == 0 }}
+      <p>没有更多记录了</p>
+      {{ else }}
+      <div class="option mui-clearfix">
+        <a href="#" class="mui-pull-left">搜索记录</a>
+        <a href="#" class="mui-pull-right history-clear">
+          <i class="fa fa-trash"></i> 清空记录</a
+        >
+      </div>
+
+      <ul class="history-list">
+        {{ each list v i }}
+        <li class="mui-clearfix">
+          <a href="./searchList.html?key={{ v }}" class="mui-pull-left"
+            >{{ v }}</a
+          >
+          <span class="mui-pull-right history-del" data-index="{{ i }}">×</span>
+        </li>
+        {{ /each }}
+      </ul>
+
+      {{ /if }}
+    </script>
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./lib/mui/js/mui.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/search.js"></script>
+  </body>
+</html>

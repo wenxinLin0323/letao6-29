@@ -1,0 +1,149 @@
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lt-layout {
+  position: relative;
+  max-width: 640px;
+  min-width: 320px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 45px 0 50px 0;
+}
+
+.lt-header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 45px;
+  width: 100%;
+  background-color: #069;
+  padding: 0 45px;
+
+  a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 45px;
+    height: 45px;
+    // background-color: yellow;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+  }
+
+  .search {
+    // left: auto; left属性 不在控制盒子位置，由right控制
+    left: auto;
+    right: 0;
+  }
+
+  h4 {
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    font-weight: normal;
+    height: 45px;
+    // background-color: red;
+    margin: 0;
+  }
+}
+
+.lt-main {
+  position: relative;
+  height: 100%;
+
+  .index-list {
+    padding: 5px;
+
+    li {
+      float: left;
+      width: 33.33%;
+
+      a {
+        img {
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+  }
+
+  .lt-product {
+    padding: 5px;
+
+    .item {
+      float: left;
+      padding: 5px;
+      text-align: center;
+      width: 49%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 10px;
+
+      img {
+        width: 100%;
+      }
+
+      .old {
+        text-decoration: line-through;
+      }
+
+      .new {
+        color: red;
+      }
+
+      p {
+        color: #000;
+      }
+    }
+
+    .item:nth-child(even) {
+      float: right;
+    }
+  }
+}
+
+.lt-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background: #069;
+
+  ul {
+    li {
+      padding-top: 5px;
+      float: left;
+      width: 25%;
+      text-align: center;
+
+      a {
+        color: #fff;
+
+        p {
+          color: #fff;
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    li.current {
+      a,
+      p {
+        color: #daa520;
+      }
+    }
+  }
+}

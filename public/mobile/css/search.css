@@ -1,0 +1,40 @@
+.search-head {
+  position: relative;
+  padding: 10px;
+  padding-right: 64px;
+}
+.search-head .search-txt {
+  height: 33px;
+  margin-bottom: 0;
+  font-size: 12px;
+  border-color: #007aff;
+  border-radius: 4px 0 0 4px;
+}
+.search-head .search-btn {
+  right: 10px;
+  top: 10px;
+  position: absolute;
+  height: 33px;
+  border-radius: 0 4px 4px 0;
+}
+.search-main {
+  padding: 10px;
+}
+.search-main .option a {
+  color: #666;
+  font-size: 12px;
+}
+.search-main .history-list {
+  border: 1px dashed hotpink;
+}
+.search-main .history-list li {
+  border-bottom: 1px dashed hotpink;
+  line-height: 30px;
+  padding: 0 10px;
+}
+.search-main .history-list li a {
+  font-size: 12px;
+}
+.search-main .history-list li:last-child {
+  border-bottom: none;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>letao</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="lib/bootstrap-validator/css/bootstrapValidator.min.css"
+    />
+    <link rel="stylesheet" href="./css/common.css" />
+  </head>
+
+  <body class="pl-180 ts">
+    <div class="lt-aside">
+      <div class="lt-title">
+        <a href="index.html">乐淘商城</a>
+      </div>
+      <div class="lt-user">
+        <img src="./images/default.png" alt="" />
+        <p>超级管理员</p>
+      </div>
+      <div class="nav">
+        <ul>
+          <li>
+            <a href="user.html"
+              ><i class="glyphicon glyphicon-user"></i>用户管理</a
+            >
+          </li>
+          <li>
+            <a href="#" class="cate-title"
+              ><i class="glyphicon glyphicon-th-list"></i>分类管理</a
+            >
+            <div class="lt-hide cate-list">
+              <a href="one.html">一级分类</a>
+              <a href="two.html">二级分类</a>
+            </div>
+          </li>
+          <li>
+            <a href="product.html"
+              ><i class="glyphicon glyphicon-tags"></i>商品管理</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="lt-main">
+      <div class="main-head pl-180 ts">
+        <a href="#" class="pull-left lt-menu"
+          ><i class="glyphicon glyphicon-th"></i
+        ></a>
+        <a href="#" class="pull-right login-out"
+          ><i class="glyphicon glyphicon-log-out"></i
+        ></a>
+      </div>
+      <div class="lt-content">
+        <ol class="breadcrumb lt-crumbs">
+          <li><a href="#">管理系统</a></li>
+          <li class="active">首页</li>
+        </ol>
+        <div class="col-lg-6">
+          <div id="main1" style="width: 600px; height: 400px;"></div>
+        </div>
+        <div class="col-lg-6">
+          <div id="main2" style="width: 600px; height: 400px;"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
+  <script src="./lib/echarts/echarts.min.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/common.js"></script>
+</html>

@@ -1,0 +1,51 @@
+.cate-aside {
+  position: relative;
+  width: 90px;
+  height: 100%;
+  // background-color: pink;
+  float: left;
+
+  ul {
+    li {
+      a {
+        display: block;
+        width: 90px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        color: #666;
+        border-bottom: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        background-color: #eee;
+      }
+    }
+
+    li.current {
+      a {
+        background-color: #fff;
+        border-right: none;
+      }
+    }
+  }
+}
+
+.cate-content {
+  height: 100%;
+  // background-color: green;
+  // 当给盒子设置overflow:Hidden 后， 会构成一个BFC元素
+  // BFC元素渲染特点：
+  // 1- BFC的元素在计算高度时， 内部浮动子元素也会参与计算
+  // 2- BFC的元素不会和浮动元素有交集， 如果有BFC会避让
+  // 3- 不同的BFC元素margin不会重叠的
+  overflow: hidden;
+
+  a {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+
+    img {
+      width: 60%;
+    }
+  }
+}

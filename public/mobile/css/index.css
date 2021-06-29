@@ -1,0 +1,33 @@
+.lt-nav {
+  padding: 10px;
+}
+.lt-nav li {
+  float: left;
+  width: 33.33%;
+}
+.lt-nav img {
+  display: block;
+  width: 100%;
+}
+.lt-product {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.lt-product .item {
+  width: 48%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.lt-product .item .new {
+  color: red;
+}
+.lt-product .item .old {
+  text-decoration: line-through;
+}
+.lt-product .item img {
+  width: 100%;
+}
